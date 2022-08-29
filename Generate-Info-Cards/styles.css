@@ -1,0 +1,35 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.info {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	padding: 2rem;
+}
+
+.info div {
+	background-color: rgb(181, 181, 248);
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px 1px rgba(28, 28, 28, 0.193);
+	color: rgb(50, 50, 50);
+}
