@@ -1,0 +1,90 @@
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 1.6rem;
+	color: #3d3f43;
+	background-color: #84a9ee;
+}
+
+.container {
+	max-width: 400px;
+	padding: 25px;
+	margin: 30px auto 30px auto;
+	text-align: center;
+	background-color: #bcd1f8;
+	border-radius: 6px;
+	border: 1px solid #4a4a4a7e;
+	box-shadow: 1px 1px 20px 0px #00000021;
+}
+
+.container h1 {
+	margin-bottom: 10px;
+}
+
+.container input,
+.container button {
+	padding: 4px;
+}
+
+/* list  */
+.container ul {
+	text-align: initial;
+}
+
+.list-container {
+	max-width: 400px;
+	padding: 5px;
+	margin: 30px auto 30px auto;
+}
+
+.to-do-list li {
+	display: grid;
+	grid-template-columns: 37px 4fr 1fr;
+	/* grid-template-rows: auto; */
+	grid-template-areas: 'check item button';
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+	margin: 7px;
+	text-decoration: solid;
+	background-color: #d4e1f9;
+	border-radius: 6px;
+	border: 1px solid #4a4a4a7e;
+	box-shadow: 1px 1px 20px 0px #00000021;
+}
+
+.div-btns {
+	grid-area: button;
+	display: flex;
+}
+
+.to-do-list button {
+	padding: 3px 5px 3px 5px;
+	margin-left: 5px;
+}
+
+.clear-item-btn {
+	content: x;
+}
+
+.done-item-btn {
+	content: Done;
+}
+
+.check {
+	grid-area: check;
+	font-size: 2rem;
+	margin-left: 5px;
+}
